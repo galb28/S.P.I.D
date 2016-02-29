@@ -1,0 +1,59 @@
+/***************************************************/
+/* Circle (Progress)
+/**************************************************/
+
+.progress_circle {
+      position: relative;
+      color: #999;
+}
+
+.progress_circle text {
+    text-anchor: middle;
+    pointer-events: auto;
+    fill: currentColor;
+}
+
+.progress_circle svg .stroke {
+    stroke: #3e50b4 ;
+}
+
+
+.progress_circle svg {
+    margin: auto;
+    display: block;
+    pointer-events: none;
+    direction: rtl;
+}
+
+.progress_circle .stroke {
+    fill: transparent;
+    stroke: #9170bb ;
+    stroke-width: 20;
+    stroke-dashoffset: 534;
+    stroke-dasharray: 534;
+    -webkit-transition: stroke-dashoffset 2s;
+    transition: stroke-dashoffset 2s;
+    -webkit-animation-play-state: running;
+    -moz-transform: rotate(-89deg) translateX(-190px);
+    /*transition-timing-function: cubic-bezier(0.4, 0, 1, 1);*/
+}
+
+.progress_circle .stroke_background {
+    stroke: #f9f9f9 !important;      /* Change stroke color */
+    stroke-dashoffset: 0 !important; /* Full circle         */
+}
+
+/***************************************************/
+/* Button
+/**************************************************/
+
+button {
+    margin: 5px 0 !important;
+}
+
+.main_buttons {
+    position: relative;
+    margin: 16px;
+    bottom: -3em;
+    margin-top: 100px !important;
+}

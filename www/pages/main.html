@@ -1,0 +1,24 @@
+<!-- File: main.html !-->
+
+<!-- START Circle !-->
+<div style="margin-top: 35px;">
+    <figure class="progress_circle">
+        <svg width="200" height="200">
+            <text id="counter_text" font-size="18px" x="50%" y="50%" dx="-4.5px"></text>
+            <circle class="stroke stroke_background" id="circle_background" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+            <circle class="stroke" id="circle" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+        </svg>
+    </figure>
+</div>
+<!-- END Circle !-->
+
+
+<!-- START Buttons !-->
+<div class="main_buttons padded-full">
+    <button v-on:click="change_page_example" class="btn btn-alert btn-main btn-popover fit-parent primary">דף אחר</button>
+    <button v-on:click="test_login" class="btn btn-alert btn-main btn-popover fit-parent primary">כפתור התראה</button>
+    <button v-on:click="change_progress" class="btn btn-alert btn-main btn-popover fit-parent primary">כפתור עיגול</button>
+
+    <br>
+</div>
+<!-- END Buttons !-->

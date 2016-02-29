@@ -1,0 +1,38 @@
+.filed1 {
+	margin-top: 120px;
+}
+
+.filed2 {
+	margin-top: 45px;
+}
+
+.button {
+	margin-top: 45px;
+}
+
+.button2 {
+	margin-top: 20px;
+}
+
+.img1{
+	margin-top: 35px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.red {
+
+    border-color: red !important;
+	
+	}
+	
+.blue {
+
+    border-color: #0084e7!important;
+	
+	}
+
+	input { 
+		background-color: #EFEFEF !important;
+	}

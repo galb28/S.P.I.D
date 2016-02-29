@@ -1,0 +1,33 @@
+<!-- File: Sign_up.html !-->
+
+<div class = "firstname_input">
+<input type="text" placeholder="first name" v-model="firstname">
+</div>
+
+<div class = "lastname_input">
+<input type="text" placeholder="last name" v-model="lastname">
+</div>
+
+<div class = "email_input">
+<input type="email" class="{{ email_class }}" placeholder="{{ placeholder_text }}" v-model="email">
+</div>
+
+<div class = "id_input">
+<input type="text" class="{{ id_class }}" placeholder="{{ placeholder_text2 }}" v-model="id">
+</div>
+
+<div class="password_input">
+
+<input type="password" class="{{ password_class }}" placeholder="{{ placeholder_text3 }}" v-model="password">
+
+</div>	
+
+<div class="password_input2">
+
+<input type="password" class="{{ password_class }}" placeholder="{{ placeholder_text4 }}" v-model="password2">
+
+</div>	
+
+<div class = "submit">
+<button v-on:click="submit_clicked" class="btn fit-parent primary">Submit</button>
+</div>

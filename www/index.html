@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+            <title>SPID App</title>
+
+        <!-- START Meta Tags !-->
+            <meta http-equiv="Content-Security-Policy"/>
+            <meta charset="UTF-8">
+            <meta name="msapplication-tap-highlight" content="no">
+            <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- END Meta tags !-->
+
+        <!-- START CSS !-->
+
+            <!-- Custom !-->
+            <link rel="stylesheet" type="text/css" href="css/Base.css">
+
+            <!-- START Phonon !-->
+				<link rel="stylesheet" href="css/phonon/phonon.css" />
+                <link rel="stylesheet" href="css/phonon/phonon-base.css" />
+                <link rel="stylesheet" href="css/phonon/components/dialogs.css" />
+                <link rel="stylesheet" href="css/phonon/components/preloaders.css" />
+            <!-- END Phonon !-->
+
+        <!-- END CSS !-->
+    </head>
+
+    <body>
+
+        <!-- START Header !-->
+        <header class="header-bar">
+            <div class="center">
+            	<h1 class="title">ספיד - מחוייבות אישית</h1>
+            </div>
+        </header>
+        <!-- END Header !-->
+
+        <!-- START Loading !-->
+        <div id="loading" class="loading hidden">
+            <div class="circle-progress active">
+                <div class="spinner"></div>
+            </div>
+        </div>
+        <!-- END Loading !-->
+
+        <!-- START Content !-->
+        <div class="content" id="content"></div>
+        <!-- END Content !-->
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- START Javascript !-->
+        <script type="text/javascript">ionic = {};</script>
+        <!-- Utils !-->
+        <script type="text/javascript" src="js/Library/Utils.js"></script>
+
+        <!-- START Phonon !-->
+        <script src="js/phonon/phonon-core.js"></script>
+        <script src="js/phonon/components/dialogs.js"></script>
+        <!-- END phonon !-->
+
+        <!-- START Custom Scripts !-->
+        <div id="scripts">
+            <script type="text/javascript" src="js/Library/Browser.js"></script>
+            <script type="text/javascript" src="js/Library/Debugger.js"></script> <!-- Only in development !-->
+
+            <script type="text/javascript">
+                window.onload = function() {
+                    LoadScript(['Declerations', 'String', 'Crypto', 'Location', 'Vue', 'Storage'], function() {
+                        var fileref = document.createElement('script');
+                        fileref.src = "js/App.js";
+                        document.body.appendChild(fileref);
+                    });
+                }
+            </script>
+        </div>
+        <!-- Pages !-->
+        <div id="pages_scripts">
+
+        </div>
+        <!-- END Custom Scripts !-->
+        <!-- END Javascript !-->
+
+    </body>
+</html>

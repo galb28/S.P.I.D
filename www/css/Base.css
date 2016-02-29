@@ -1,0 +1,84 @@
+/***************************************************/
+/* General
+/**************************************************/
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    -webkit-backface-visibility: hidden;
+}
+
+body {
+    background: #efefef !important;
+}
+
+/***************************************************/
+/* Dialog
+/**************************************************/
+
+.dialog
+{
+    direction: rtl;
+}
+
+.dialog .buttons li {
+    float: left;
+    margin-left: 5px;
+}
+
+
+/***************************************************/
+/* Pages
+/**************************************************/
+
+.current_page {
+    visibility: visible;
+}
+
+.hidden_page {
+    visibility: hidden;
+    display: none;
+}
+
+/***************************************************/
+/* RTL
+/**************************************************/
+.rtl {
+    direction: rtl;
+}
+
+/***************************************************/
+/* Loading
+/**************************************************/
+.loading {
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -18px 0 0 -18px;
+}
+
+.loading.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+/***************************************************/
+/* Header
+/**************************************************/
+header.header-bar {
+    background-color: #3e50b4;
+    z-index: 30 !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+header.header-bar:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 2px;
+    background: transparent;
+}

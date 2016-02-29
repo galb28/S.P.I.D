@@ -1,0 +1,27 @@
+<!-- File: Login.html !-->
+
+<div class = "img1">
+<img src="img/logo.jpg" alt="Mountain" style="width:240px;height:110px;">
+</div>
+
+<div class="filed1">
+
+<input type="text" class="{{ id_class }}" placeholder="{{ placeholder_text }}" v-model="id">
+
+</div>
+
+<div class="filed2">
+
+<input type="password" class="{{ password_class }}" placeholder="{{ placeholder_text2 }}" v-model="password">
+
+</div>	
+
+ 
+
+<div class = "button">
+<button v-on:click="submit_clicked" class="btn fit-parent primary">Submit</button>
+</div>
+<div class = "button2">
+<button v-on:click="change_page_sign_up" class="btn btn-alert btn-main btn-popover fit-parent primary">הירשם</button>
+</div>
+
